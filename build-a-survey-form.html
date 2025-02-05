@@ -1,0 +1,182 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">JTS-IT's Employment Application</h1>
+        <p id="description" class="description text-center">
+          Please fill out the form below to apply for a position at JTS-IT.
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Full Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your full name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Phone Number</label>
+          <input
+            type="number"
+            name="phone"
+            id="number"
+            class="form-control"
+            placeholder="Enter your phone number"
+            min="1111111111"
+            max="9999999999"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <p>What position are you applying for?</p>
+          <select id="dropdown" name="position" class="form-control" required>
+            <option disabled selected value>Select a position</option>
+            <option value="developer">Software Developer</option>
+            <option value="designer">UI/UX Designer</option>
+            <option value="manager">Project Manager</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Do you have prior experience in this field?</p>
+          <label>
+            <input
+              name="experience"
+              value="yes"
+              type="radio"
+              class="input-radio"
+              required
+            />Yes</label
+          >
+          <label>
+            <input
+              name="experience"
+              value="no"
+              type="radio"
+              class="input-radio"
+            />No</label
+          >
+        </div>
+        <div class="form-group">
+          <p>What skills do you have?</p>
+          <label><input name="skills" value="programming" type="checkbox" class="input-checkbox" />Programming</label>
+          <label><input name="skills" value="design" type="checkbox" class="input-checkbox" />UI/UX Design</label>
+          <label><input name="skills" value="management" type="checkbox" class="input-checkbox" />Project Management</label>
+          <label><input name="skills" value="other" type="checkbox" class="input-checkbox" />Other</label>
+        </div>
+        <div class="form-group">
+          <p>Tell us about yourself</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter a brief introduction about yourself..."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit Application
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  background-color: black;
+  color: green;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #0a0a0a;
+  border-radius: 10px;
+  box-shadow: 0 0 10px green;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#title {
+  color: green;
+}
+
+#description {
+  font-style: italic;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid green;
+  border-radius: 5px;
+  background-color: black;
+  color: green;
+}
+
+.input-radio, .input-checkbox {
+  width: auto;
+  margin-right: 5px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: green;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: darkgreen;
+}
+
+** end of undefined **
+
